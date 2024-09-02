@@ -1,0 +1,19 @@
+<header>
+  <h1> ALTEN Shop </h1>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a routerLink="/">Shop</a></li>
+        <li><a routerLink="/cart">Cart ({{ cartService.getItemsCount() }})</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

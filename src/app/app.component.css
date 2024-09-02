@@ -1,0 +1,48 @@
+/* Styles pour le header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Mise en page principale */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Styles pour la barre latérale */
+.sidebar {
+  width: 150px;
+  background-color: #003355;
+  color: white;
+  padding: 15px;
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Styles pour le contenu principal */
+.content {
+  flex: 1;
+  padding: 20px;
+}
