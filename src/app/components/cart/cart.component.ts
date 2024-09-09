@@ -19,7 +19,14 @@ export class CartComponent implements OnInit {
 
   removeFromCart(product: Product) {
     this.cartService.removeFromCart(product);
-    this.items = this.cartService.getItems();  // Refresh the items list
+    this.items = this.cartService.getItems();
+  }
+
+  totalprice():number {
+    let total=0;
+    for (let i=0;i<this.items.length;i++){
+      total+=this.items[i].price;}
+    return total;
   }
 
 }

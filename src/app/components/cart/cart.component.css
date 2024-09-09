@@ -20,6 +20,7 @@
 .cart-item img {
   max-width: 80px;
   border-radius: 4px;
+  margin-right: 16px;
 }
 
 .cart-item h3 {
@@ -33,6 +34,8 @@
 }
 
 .cart-item button {
+  display: flex;
+  justify-content: center;
   padding: 8px 12px;
   background-color: #dc3545;
   color: #fff;
@@ -40,6 +43,7 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
+  align-items: center;
 }
 
 .cart-item button:hover {
@@ -52,3 +56,11 @@
   color: #888;
   margin-top: 40px;
 }
+
+.total-price {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  color: #2c3e50;
+  margin-top: 20px; }

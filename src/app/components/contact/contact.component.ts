@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-
+//groupe de controle reactif
   contactForm: FormGroup;
   submitted = false;
 
@@ -18,10 +18,6 @@ export class ContactComponent {
     });
   }
 
-  get f() {
-    return this.contactForm.controls;
-  }
-
   onSubmit() {
     this.submitted = true;
 
@@ -29,7 +25,6 @@ export class ContactComponent {
       return;
     }
 
-    // Logique d'envoi du formulaire (simulée ici)
     console.log('Email:', this.contactForm.value.email);
     console.log('Message:', this.contactForm.value.message);
 

@@ -7,6 +7,7 @@ import { CartComponent } from './components/cart/cart.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { ContactComponent } from './components/contact/contact.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

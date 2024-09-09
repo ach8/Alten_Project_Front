@@ -19,10 +19,6 @@ textarea {
   box-sizing: border-box;
 }
 
-.error {
-  color: red;
-  font-size: 0.9em;
-}
 
 button {
   padding: 10px 20px;

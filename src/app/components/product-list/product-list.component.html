@@ -1,6 +1,6 @@
 
 <div class="product-list">
-  <div *ngFor="let product of products" class="product-card">
+  <div *ngFor="let product of products | paginate: { itemsPerPage: itemsPerPage, currentPage: p } " class="product-card">
     <img [src]="product.imageUrl" alt="{{ product.name }}" />
     <h2>{{ product.name }}</h2>
     <p>{{ product.description }}</p>
@@ -8,3 +8,6 @@
     <button (click)="addToCart(product)">Add to Cart</button>
   </div>
 </div>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+
